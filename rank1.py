@@ -18,13 +18,14 @@ fraSet = {""}
 
 
 #function that takes in User_Tank and compares it to the set we created, if a tank is found then the funciton will search and find other tanks at the same rank
-if User_Tank in usaSet:
+if User_Tank.upper() in usaSet:
     print('Valid tank, scanning for other tanks')
 else:
     str(input('Please enter a valid tank. \n'))
+    
 
 
 #function that scans the other sets and displays other tanks at this rank
-if User_Tank in usaSet:
+if User_Tank.upper() in usaSet:
     for tanks in gerSet, rusSet, gbrSet, itaSet, sweSet, fraSet:
         print(tanks)
