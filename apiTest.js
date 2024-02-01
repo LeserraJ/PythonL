@@ -29,6 +29,7 @@ app.get('/usa/tanks', (req, res) =>{
 app.get('/usa/tanks/rank_1', (req,res) =>{
     res.status(200).send({
         1: ("M2A4"),
-        1.3: ("M2")
+        1.3: ("M2"),
+        1.7: ("")
     })
 });
