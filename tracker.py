@@ -6,3 +6,8 @@
 # Seated Leg Curl 3x10-12
 # Leg Press Toe Press 4x10-12
 # Decline Plate Crunch 3x10-12
+
+
+Leg_Day = ["This is your leg day," " " "Squat", "RDL", "Goblet Squat", "Seated Leg Curl", "Leg Press Toe Press", "Decline Plate Crunch"]
+
+print(Leg_Day)
