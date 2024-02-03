@@ -4,12 +4,20 @@ from flask_restful import Api, Resource
 app = Flask(__name__)
 api = Api(app)
 
-class HelloWorld(Resource):
+class Nations(Resource):
     def get(self):
-        return {'data':'Hello World'}
+        return {'usa':'ground', 
+                'germany':"ground",
+                'russia':'ground',
+                'great_britian':'ground',
+                'france': 'ground',
+                'italy':'ground',
+                'sweden':'ground',
+                'israel':'ground'
+                }
 
 
-api.add_resource(HelloWorld, "/helloworld")
+api.add_resource(Nations, "/nations")
 
 
 if __name__ == "__main__":
